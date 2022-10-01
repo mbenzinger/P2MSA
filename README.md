@@ -1,35 +1,44 @@
-# P2MSA
-<!--milestone_project2
+# P2MSA Milestone Project 2
+
 by the Shoe Crew:
+
 Meghna Patel
+
 Mason Benzinger
+
 Grant Schlimgen
+
 William Smith
+
 Sixto Herrera
 
-Details:
--Company (e.g. Nike)
--Model Name (e.g. Air Monarch VI)
--Stock Number (e.g. #DC0001-002)
--Sizes Available (7-15, M, W)
+## Mission Statement
 
-CRUD:
-Create - Adding new models as they are added in, adding new sizes if a fill-in arrives, etc.
-Read - When anyone wants to view inventory, be able to see what's in stock at a moment's notice.
-Update -  When shoes get sold or return/exchanged, stock is updated to reflect current status to avoid mistakes.
-Destroy - Removing old models when they run too low on stock, get pulled off of display, or get discontinued.
+The purpose of this project is to build, from the ground up, an operating inventory system for managing on-site stock at a retail establishment. Upon completion, users accessing the application will be able to control their supply in an easy-to-use format with immediate results.  
 
--html skeleton
--client side Express application with React that accesses a server to pull up pertinent information
--SQL database on server side to be accessed by the client
--styling and functionality for an optimal user experience
+## Functionality
+
+### Create 
+
+Users will be able to add new models as they arrive on-site, providing information to keep everyone on the same page.
+
+### Read
+
+Any user wanting to view inventory will be able to pull up real time results for a better understanding of what equipment is currently in-house. 
+
+### Update 
+
+When products are added, removed, or sold, users will be able to change the name or number of a particular item to accurately reflect availability at all times. 
+
+### Destroy 
+
+Removing old models when they run too low on stock, get pulled off of display, or get discontinued.
 
 
--->
 
+# React Technical Information
 
-
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
