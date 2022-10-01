@@ -9,7 +9,7 @@ import { ThinBackend } from 'thin-backend-react';
 // CONFIGURATION
 const PORT = process.env.PORT
 const THIN_URI = process.env.THIN_URI
-const app = express()
+
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
 initThinBackend({
@@ -18,12 +18,12 @@ initThinBackend({
 });
 
 // React entrypoint component
-//function App() {
-    // The `requireLogin` triggers a redirect to the login page if not logged in already
+// function App() {
+//     //The `requireLogin` triggers a redirect to the login page if not logged in already
 //    return <ThinBackend requireLogin>
 //        <div>Hello World</div>
 //    </ThinBackend>
-//}
+// }
 
 
 
