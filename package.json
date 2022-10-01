@@ -1,3 +1,6 @@
+
+
+
 {
   "name": "p2msa",
   "version": "0.1.0",
@@ -11,6 +14,8 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sequelize": "^6.23.2",
+    "thin-backend": "^0.11.0",
+    "thin-backend-react": "^0.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -36,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/thin-backend": "https://thin.dev/types/09b57c30-f8fe-4361-80d2-ee91e45f7758/uzVBvJgcSAAvHDYWpXkycDKAMKqxXvFT"
   }
 }
