@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { startTransition } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -7,6 +7,7 @@ import { initThinBackend, ensureIsUser } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
 
 // CONFIGURATION
+
 const PORT = process.env.PORT
 const THIN_URI = process.env.THIN_URI
 
@@ -24,8 +25,6 @@ initThinBackend({
 //        <div>Hello World</div>
 //    </ThinBackend>
 // }
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
