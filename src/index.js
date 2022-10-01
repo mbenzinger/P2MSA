@@ -6,10 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import { initThinBackend, ensureIsUser } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
 
+// CONFIGURATION
+const PORT = process.env.PORT
+const THIN_URI = process.env.THIN_URI
+const app = express()
+
 // This needs to be run before any calls to `query`, `createRecord`, etc.
 initThinBackend({
     // This url is different for each backend, you can find the backend url in the project documentation
-    host: 'https://<YOUR PROJECTS BACKEND_URL>'
+    host: THIN_URI
 });
 
 // React entrypoint component
