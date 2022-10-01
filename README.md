@@ -1,10 +1,15 @@
 # P2MSA Milestone Project 2
 
 by the Shoe Crew:
+
 Meghna Patel
+
 Mason Benzinger
+
 Grant Schlimgen
+
 William Smith
+
 Sixto Herrera
 
 ## Mission Statement
