@@ -10,6 +10,9 @@ import { ThinBackend } from 'thin-backend-react';
 
 const PORT = process.env.PORT
 const THIN_URI = process.env.THIN_URI
+const AWS_RDS = process.env.AWS_RDS
+const AWS_RDS_NAME = process.env.AWS_RDS_NAME
+const AWS_RDS_PSWRD = process.env.AWS_RDS_PSWRD
 
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
