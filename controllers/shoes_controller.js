@@ -8,7 +8,7 @@ const { Company, Model, Stock } = db
 shoes.get('/', async (req, res) => {
     try {
         const foundShoes = await Shoe.findAll({
-            order: [['company', 'ASC'],['shoe_model','ASC']],
+            order: [['company', 'ASC'], ['shoe_model', 'ASC']],
             where: {
                 name: { [Op.like]: `%${req.query.name ? req.query.name : ''}%` }
             }
@@ -28,11 +28,11 @@ shoes.get('/:name', async (req, res) => {
                 {
                     model: ShoeModel,
                     as: "model",
-                    where: { name: { [Op.like]: `%${req.query.event ? req.query.event : ''}%` } }                
+                    where: { name: { [Op.like]: `%${req.query.event ? req.query.event : ''}%` } }
                 }
             ]
         })
-        res.status(200).json(foundSHoe)
+        res.status(200).json(foundShoe)
     } catch (error) {
         res.status(500).json(error)
     }
