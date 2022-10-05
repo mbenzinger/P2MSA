@@ -1,7 +1,3 @@
-// DEPENDENCIES
-const express = require('express')
-const { Sequelize } = require('sequelize')
-const app = express()
 
 import React, { startTransition } from 'react';
 import ReactDOM from 'react-dom/client';
@@ -10,6 +6,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initThinBackend, ensureIsUser } from 'thin-backend';
 import { ThinBackend } from 'thin-backend-react';
+
+// DEPENDENCIES
+const express = require('express')
+const { Sequelize } = require('sequelize')
+const app = express()
+
+
 
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
