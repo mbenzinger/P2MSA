@@ -13,14 +13,6 @@ const { Sequelize } = require('sequelize')
 const app = express()
 
 
-
-
-// This needs to be run before any calls to `query`, `createRecord`, etc.
-initThinBackend({
-    // This url is different for each backend, you can find the backend url in the project documentation
-    host: THIN_URI
-});
-
 // CONFIGURATION / MIDDLEWARE
 require('dotenv').config()
 app.use(express.json())
@@ -30,6 +22,12 @@ const THIN_URI = process.env.THIN_URI
 const AWS_RDS = process.env.AWS_RDS
 const AWS_RDS_NAME = process.env.AWS_RDS_NAME
 const AWS_RDS_PSWRD = process.env.AWS_RDS_PSWRD
+
+// This needs to be run before any calls to `query`, `createRecord`, etc.
+initThinBackend({
+    // This url is different for each backend, you can find the backend url in the project documentation
+    host: THIN_URI
+});
 
 // ROOT
 app.get('/', (req, res) => {
