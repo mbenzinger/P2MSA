@@ -3,23 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { initThinBackend, ensureIsUser } from 'thin-backend';
-import { ThinBackend } from 'thin-backend-react';
+//import { initThinBackend, ensureIsUser } from 'thin-backend';
+//import { ThinBackend } from 'thin-backend-react';
 
 // CONFIGURATION
 
 const PORT = process.env.PORT
-const THIN_URI = process.env.THIN_URI
+//const THIN_URI = process.env.THIN_URI
 const AWS_RDS = process.env.AWS_RDS
 const AWS_RDS_NAME = process.env.AWS_RDS_NAME
 const AWS_RDS_PSWRD = process.env.AWS_RDS_PSWRD
 
 
 // This needs to be run before any calls to `query`, `createRecord`, etc.
-initThinBackend({
+//initThinBackend({
     // This url is different for each backend, you can find the backend url in the project documentation
-    host: THIN_URI
-});
+   // host: THIN_URI
+//});
 
 // React entrypoint component
 // function App() {
