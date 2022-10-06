@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+import reportWebVitals from './reportWebVitals';
+
+
 // DEPENDENCIES
 const express = require('express')
 const { Sequelize } = require('sequelize')
@@ -25,9 +28,13 @@ app.get('/', (req, res) => {
     })
 })
 
-// CONTROLLERS 
-const shoesController = require('./controllers/shoes_controller')
-app.use('/shoes', shoesController)
+
+// This needs to be run before any calls to `query`, `createRecord`, etc.
+//initThinBackend({
+    // This url is different for each backend, you can find the backend url in the project documentation
+   // host: THIN_URI
+//});
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
